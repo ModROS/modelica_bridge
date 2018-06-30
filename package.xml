@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>modelica_bridge</name>
-  <version>0.1.0</version>
+  <version>0.0.0</version>
   <description>A package for connecting ROS to Modelica tools via TCP sockets</description>
+  <url>https://wiki.ros.org/modelica_bridge</url>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
