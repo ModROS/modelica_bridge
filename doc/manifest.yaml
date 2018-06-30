@@ -1,0 +1,21 @@
+actions: []
+authors: ''
+brief: ''
+bugtracker: ''
+depends:
+- catkin
+- roscpp
+- joy
+- message_runtime
+- std_msgs
+- rospy
+- message_generation
+description: A package for connecting ROS to Modelica tools via TCP sockets
+license: BSD
+maintainers: Shashank Swaminathan <sh.swami235@gmail.com>
+msgs:
+- ModComm
+package_type: package
+repo_url: ''
+srvs: []
+url: https://wiki.ros.org/modelica_bridge
