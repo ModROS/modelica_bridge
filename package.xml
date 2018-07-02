@@ -6,19 +6,12 @@
   <url type="website">https://wiki.ros.org/modelica_bridge</url>
   <url type="repository">https://github.com/ModROS/modelica_bridge.git</url>
 
-  <!-- One maintainer tag required, multiple allowed, one person per tag -->
-  <!-- Example:  -->
-  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
   <maintainer email="sh.swami235@gmail.com">Shashank Swaminathan</maintainer>
 
-
-  <!-- One license tag required, multiple allowed, one license per tag -->
-  <!-- Commonly used license strings: -->
-  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
-  
+
   <build_depend>message_generation</build_depend>
   <exec_depend>message_runtime</exec_depend>
 

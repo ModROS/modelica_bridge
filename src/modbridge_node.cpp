@@ -3,14 +3,13 @@
  * @file modbridge_node.cpp
  * 
  * Node for connecting Modelica to ROS via a tcp/ip interface.
- * @author Shashank Swaminathan <sh.swami235@gmail.com>
- */
-/*
- * Copyright 2018 Shashank Swaminathan.
- *
+ * 
  * This file is part of the modelica_bridge package and subject to the license terms
  * in the top-level LICENSE file of the modelica_bridge repository.
  * https://github.com/ModROS/modelica_bridge/blob/master/LICENSE
+ * 
+ * Copyright 2018
+ * @author Shashank Swaminathan <sh.swami235@gmail.com>
  */
 
 #include <ros/ros.h>
@@ -142,7 +141,7 @@ ModBridge::ModBridge()
 
 void ModBridge::spin() 
 {
-    ros::Rate loop(20);
+    ros::Rate loop(update_rate_);
 
     while(ros::ok())
     {
