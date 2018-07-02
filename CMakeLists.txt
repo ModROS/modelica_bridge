@@ -12,13 +12,9 @@ generate_messages()
 
 catkin_package(CATKIN_DEPENDS message_runtime ${CATKIN_DEPS})
 
-include(CheckIncludeFiles)
-check_include_files(sys/socket.h HAVE_SYS_SOCKET_H)
+add_executable(modbridge_node src/modbridge_node.cpp)
+target_link_libraries(modbridge_node ${catkin_LIBRARIES})
+add_dependencies(modbridge_node ${modelica_bridge_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-if(HAVE_SYS_SOCKET_H)
-  add_executable(modbridge_node src/modbridge_node.cpp)
-  target_link_libraries(modbridge_node ${catkin_LIBRARIES})
-  add_dependencies(modbridge_node ${modelica_bridge_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-else(HAVE_SYS_SOCKET_H)
-  message("Warning: no <sys/socket.h>; won't build modelica_bridge node")
-endif(HAVE_SYS_SOCKET_H)
+install(TARGETS modbridge_node
+        RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
