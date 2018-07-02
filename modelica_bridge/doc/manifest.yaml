@@ -16,6 +16,6 @@ maintainers: Shashank Swaminathan <sh.swami235@gmail.com>
 msgs:
 - ModComm
 package_type: package
-repo_url: ''
+repo_url: https://github.com/ModROS/modelica_bridge.git
 srvs: []
 url: https://wiki.ros.org/modelica_bridge

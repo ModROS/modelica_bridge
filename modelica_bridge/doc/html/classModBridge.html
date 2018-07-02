@@ -96,7 +96,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to act as relay between ROS and Modelica. It initializes a tcp/ip socket to act as a bridge between ROS and Modelica. It can take character buffers up to 1024 bytes. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00044">44</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00045">45</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab860b54a277559bd3d3e3ad17f38b1bf"></a>
 <div class="memitem">
@@ -112,7 +112,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Defult constructor initializes receiving socket, subs and pubs. No inputs. </p><dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00116">116</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00119">119</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -138,7 +138,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Callback for receiving controller values. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Callback for receiving controller values. Reads from topic /control_values. Stores data into array of size MAX_ARRAY - only reads MAX_ARRAY amount of array slots. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inVal</td><td>ModComm message holding controller values. </td></tr>
   </table>
@@ -146,7 +146,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00184">184</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00187">187</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -180,7 +180,7 @@ Private Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classModBridge.html#aa8c0c2b377a933a25043ec2b5d9dd18a" title="Parameter for checking errors on socket interaction. ">error_check_()</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00220">220</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00223">223</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ Private Attributes</h2></td></tr>
 <a class="el" href="classModBridge.html#a158a0b7d95527bc1f8fb635839e25e21">writeToBuffer()</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00192">192</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00195">195</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Keep program from closing. Run callbacks for ROS nodes, and keep socket connection to Modelica alive. No inputs. </p><dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00140">140</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00143">143</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ Private Attributes</h2></td></tr>
 <a class="el" href="classModBridge.html#a878a931bd7670ed006c192aa78139d26" title="buffer array for interaction with socket ">socket_buffer_()</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00209">209</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00212">212</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ Private Attributes</h2></td></tr>
 
 <p>string buffer used to transmit information over the socket </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00108">108</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00111">111</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ Private Attributes</h2></td></tr>
 
 <p>Modelica socket address. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00106">106</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00109">109</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ Private Attributes</h2></td></tr>
 
 <p>Modelica socket size. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00105">105</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00108">108</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Private Attributes</h2></td></tr>
 
 <p>Parameter for checking errors on socket interaction. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00113">113</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00116">116</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ Private Attributes</h2></td></tr>
 
 <p>Modelica socket binding. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00102">102</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00105">105</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +405,7 @@ Private Attributes</h2></td></tr>
 
 <p>ROS node handle. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00097">97</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00100">100</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Private Attributes</h2></td></tr>
 
 <p>Port number. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00103">103</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00106">106</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -453,7 +453,7 @@ Private Attributes</h2></td></tr>
 
 <p>publisher for model feedback values </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00099">99</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00102">102</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ Private Attributes</h2></td></tr>
 
 <p>buffer array for transmission via ROS </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00110">110</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00113">113</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -501,7 +501,7 @@ Private Attributes</h2></td></tr>
 
 <p>ROS socket address. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00104">104</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00107">107</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -525,7 +525,7 @@ Private Attributes</h2></td></tr>
 
 <p>buffer array for interaction with socket </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00109">109</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00112">112</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -549,7 +549,7 @@ Private Attributes</h2></td></tr>
 
 <p>ROS socket binding. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00101">101</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00104">104</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ Private Attributes</h2></td></tr>
 
 <p>subscriber to ROS controller values </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00098">98</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00101">101</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -597,7 +597,7 @@ Private Attributes</h2></td></tr>
 
 <p>ROS node maximum loop rate. </p>
 
-<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00111">111</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="modbridge__node_8cpp_source.html#l00114">114</a> of file <a class="el" href="modbridge__node_8cpp_source.html">modbridge_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -610,7 +610,7 @@ Private Attributes</h2></td></tr>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/modelica_bridge">modelica_bridge</a><br />
 Author(s): </br />
-<small>autogenerated on Sat Jun 30 2018 18:50:18</small>
+<small>autogenerated on Mon Jul 2 2018 13:19:13</small>
 </div>
 </body>
 </html>
