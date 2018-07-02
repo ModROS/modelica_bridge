@@ -1,6 +1,12 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog for package modelica_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Forthcoming
+-----------
+* Edited README.md
+* Edited documentation for modelica_bridge
+* Contributors: Shashank Swaminathan
+
 0.1.0 (2018-06-30)
 ------------------
 * Added link to online documentation of modelica_bridge
