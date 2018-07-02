@@ -4,14 +4,9 @@ Changelog for package modelica_bridge_examples
 
 Forthcoming
 -----------
-* Fixed CHANGELOG.rst
+* Added modelica_bridge_examples package to modelica_bridge repository
+* Contributors: Shashank Swaminathan
 
 0.1.0 (2018-06-30)
 ------------------
-* Fixed CHANGELOG.rst
-
-0.0.0 (2018-06-30)
-------------------
-* First commit of full modelica_bridge_examples
-* Initial commit
-* Contributors: Shashank Swaminathan
+* Developed in old separate modelica_bridge_examples repository
