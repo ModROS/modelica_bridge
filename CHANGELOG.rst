@@ -3,9 +3,13 @@ Changelog for package modelica_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Forthcoming
 -----------
+* Edited package description
+* Updated documentation
 * Edited README.md
 * Edited documentation for modelica_bridge
-* Contributors: Shashank Swaminathan
+* Edited <depend> tags in package.xml
+* Added install target for modbridge node
+* Edited documentation for modelica_bridge
 
 0.1.0 (2018-06-30)
 ------------------
